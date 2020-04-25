@@ -1,19 +1,30 @@
 package com.example.pizza.entity;
+
+import com.example.pizza.model.AttributeSet;
+import com.example.pizza.model.IngridientGroup;
+import com.example.pizza.model.Value;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+
 import javax.persistence.*;
+import java.util.List;
+import java.util.Optional;
 
 @Entity
-@Table(name="pizza_entity")
+@Table(name="ingridients_entity")
 @EntityListeners(AuditingEntityListener.class)
 public class Ingridient {
     @Id
-    @GeneratedValue(strategy =  GenerationType.AUTO)
+    @GeneratedValue(strategy =  GenerationType.IDENTITY)
+    @JoinColumn
     private long entityId;
 
-    @Column(name = "attribute_set_id", nullable = false)
-    private Integer attributeSetId;
+    @ManyToOne
+    private AttributeSet attributeSet;
 
-    public long getID() {
+    @ManyToOne
+    private IngridientGroup ingridientGroup;
+
+    public long getId() {
         return entityId;
     }
 
@@ -21,7 +32,7 @@ public class Ingridient {
         this.entityId = id;
     }
 
-    public Integer getAttributeSetId() {
-        return this.attributeSetId;
+    public IngridientGroup getIngridientGroup() {
+        return this.ingridientGroup;
     }
 }

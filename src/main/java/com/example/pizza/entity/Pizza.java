@@ -9,7 +9,7 @@ import javax.persistence.*;
 @EntityListeners(AuditingEntityListener.class)
 public class Pizza {
     @Id
-    @GeneratedValue(strategy =  GenerationType.AUTO)
+    @GeneratedValue(strategy =  GenerationType.IDENTITY)
     private long entityId;
 
     @Column(name = "attribute_set_id", nullable = false)

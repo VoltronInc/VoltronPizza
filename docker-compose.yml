@@ -6,7 +6,7 @@ services:
     environment:
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
       MYSQL_ROOT_PASSWORD: "root"
-      MYSQL_DATABASE: "magento"
+      MYSQL_DATABASE: "pizza"
     shm_size: '1gb'
     volumes:
       - ./my.cnf:/etc/mysql/conf.d/mysql.cnf

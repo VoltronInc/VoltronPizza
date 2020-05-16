@@ -91,7 +91,7 @@ LOCK TABLES `ingridient_group` WRITE;
 /*!40000 ALTER TABLE `ingridient_group` DISABLE KEYS */;
 INSERT INTO `ingridient_group` VALUES (1,'base',NULL),(2,'fillings',NULL),(3,'sauces',NULL),(4,'additional',NULL),(5,'vegetables',2),(6,'meat',2),(7,'seafoods',2),(8,'cheeses',2),(9,'fruits',2),(10,'herbs',2),(11,'sauces',NULL),(12,'regularSauces',11),(13,'sweetSauces',11),(14,'additional',NULL),(15,'boards',14);
 /*!40000 ALTER TABLE `ingridient_group` ENABLE KEYS */;
-UNLOCK TABLES;
+UNLOCK TABLES;mysql
 
 --
 -- Table structure for table `ingridient_value`

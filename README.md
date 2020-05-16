@@ -4,6 +4,7 @@
 ## The study project for pizza constructor
 
 The app uses EAV table and class structure for dynamic entity/attribute/value grow, as well as REST API endpoint to create these data.
+![Test Image 1](eav_chart.jpg)
 
 ## Prerequisites
 * **JDK >=11.0.7**;

@@ -7,15 +7,15 @@ The app uses EAV table and class structure for dynamic entity/attribute/value gr
 
 ## Prerequisites
 * **JDK >=11.0.7**;
-* **Apache Maven >= 3.6.*
-* **Docker version >= 19.*
-* **docker-compose >= 1.*
+* **Apache Maven >= 3.6.**
+* **Docker version >= 19.**
+* **docker-compose >= 1.**
 
 
 ## Use:
 - to setup a mysql db, from src folder run
 ```
-docker-compose up -d && docker exec *project_name*_db_1 mysql -uroot -proot pizza < pizza1.sql1
+docker-compose up -d && docker exec **project_name**_db_1 mysql -uroot -proot pizza < pizza1.sql1
 ```
 - to run application
 ```
